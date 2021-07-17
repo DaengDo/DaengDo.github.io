@@ -1,11 +1,11 @@
 # main links
 main:
-  - title: "Home"
-    url: / # https://DaengDo.github.io
-  - title: "About"
-    url: /about/
+  # - title: "Home"
+  #   url: / # https://DaengDo.github.io
   - title: "Category"
     url: /categories/
+  - title: "About"
+    url: /about/
   # - title: "Category"
   #   url: https://DaengDo.github.io/categories
   # - title: "Tag"
