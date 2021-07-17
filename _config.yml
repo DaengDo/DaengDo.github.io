@@ -12,20 +12,20 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "en-US"
-title                    : "Site Title"
+locale                   : "ko-KR"
+title                    : "DaengDo's Blog"
 title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
-description              : "An amazing website."
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : # the subpath of your site, e.g. "/blog"
+subtitle                 : # 부제목, 블로그 이름 밑에 작게 표시됨
+name                     : "DaengDo" # 이름
+description              : "뎅도의 기록실입니다!" # 설명
+url                      : "https://DaengDo.github.io" # the base hostname & protocol for your site e.g. 
+baseurl                  : "/" # baseurl을 사용하고 있으면 입력하면 된다. // the subpath of your site, e.g. 
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png" // 연관포스트나 검색 등에서 미리보기 사진을 설정
+logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png" // 블로그 타이틀 옆에 로고88x88사이즈
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
@@ -101,11 +101,11 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
-  email            :
+  name             : "DaengDo"
+  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg" // 내 얼굴 사진 넣는 곳
+  bio              : "잊기전에 기록하자!"
+  location         : "South Korea"
+  email            : # 밑의 이메일과 이것중에 하나만 설정하면 된다. "ring_yoonsuk@naver.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -121,7 +121,7 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+      url: "https://github.com/DaengDo"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
@@ -283,7 +283,15 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: true
+      read_time: false # 읽는데 걸리는 시간 표기 여부
       comments: # true
       share: true
       related: true
+      sidebar_main: true
+  # _pages
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true

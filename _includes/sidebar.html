@@ -15,5 +15,8 @@
       {% include nav_list nav=page.sidebar.nav %}
     {% endif %}
   {% endif %}
+   {% if page.sidebar_main %} <!--이거 세 줄 추가-->
+    {% include nav_list_main %} <!--이거 세 줄 추가-->
+  {% endif %} <!--이거 세 줄 추가-->
   </div>
 {% endif %}

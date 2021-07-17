@@ -8,18 +8,18 @@ html {
   /* apply a natural box layout model to all elements */
   box-sizing: border-box;
   background-color: $background-color;
-  font-size: 16px;
+  font-size: 14px;
 
   @include breakpoint($medium) {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   @include breakpoint($large) {
-    font-size: 20px;
+    font-size: 16px;
   }
 
   @include breakpoint($x-large) {
-    font-size: 22px;
+    font-size: 18px;
   }
 
   -webkit-text-size-adjust: 100%;
@@ -184,4 +184,21 @@ input[type="search"]::-webkit-search-cancel-button {
 textarea {
   overflow: auto; /* remove vertical scrollbar in IE6-9*/
   vertical-align: top; /* readability and alignment cross-browser*/
+}
+
+// 아래는 스크롤바 커스터마이징 추가한 부분
+
+::-webkit-scrollbar{
+  width: 8px; // 세로 스크롤의 너비
+  height: 3px; // 가로 스크롤의 너비
+  background-color: #121212; // 스크롤의 기본 배경색상
+  
+}
+::-webkit-scrollbar-thumb{
+  border-radius: 3px; // 스크롤바 곡률
+  background-color: #083b17; // 스크롤바 색상
+}
+
+::-webkit-scrollbar-track:horizontal{
+  background-color: #000000; // 가로 스크롤바 색상
 }
