@@ -25,15 +25,11 @@ last_modified_at: 2021-00-00 # 이 글을 수정한 날짜
 
 <img src="이미지 url" width="가로 크기" height="세로 크기">
 
-<div class="notice--primary" markdown="1">
-Notice
-</div>
-
-혹은
-
 ---
 
-**재밋당**
+**{:target="_blank"}**
 {: .notice--primary}
 
 ---
+
+**참고 자료**
