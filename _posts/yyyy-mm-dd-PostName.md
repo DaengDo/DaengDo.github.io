@@ -27,7 +27,7 @@ last_modified_at: 2021-00-00 # 이 글을 수정한 날짜
 
 ---
 
-**{:target="_blank"}**
+{:target="_blank"}
 {: .notice--primary}
 
 ---

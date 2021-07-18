@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "개인 기록용 블로그"
+title                    : "DaengDo's Archive"
 title_separator          : "-"
 subtitle                 : # 부제목, 블로그 이름 밑에 작게 표시됨
 name                     : "DaengDo" # 이름
