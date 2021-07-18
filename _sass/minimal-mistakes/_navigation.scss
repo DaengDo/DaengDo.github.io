@@ -45,11 +45,9 @@
     font-weight: bold;
   }
 }
-
 /*
      Post pagination navigation links
      ========================================================================== */
-
 .pagination {
   @include clearfix();
   float: left;
@@ -163,36 +161,35 @@
   padding-top: 2em;
   border-top: 1px solid $border-color;
 }
-// 
-// .pagination_prev_next {
-//   @include clearfix();
-//   float: left;
-//   width: 100%;
 
-//   /* next/previous buttons */
-//   &--pager {
-//     margin-top: 0em;
-//     padding-top: 0em;
-//     display: block;
-//     padding: 1em 2em;
-//     //float: left;
-//     width: 100%;
-//     font-family: $sans-serif;
-//     font-size: $type-size-5;
-//     font-weight: bold;
-//     text-align: center;
-//     text-decoration: none;
-//     color: $muted-text-color;
-//     border: 1px solid mix(#000, $border-color, 25%);
-//     border-radius: $border-radius;
+.pagination_prev_next {
+  @include clearfix();
+  float: left;
+  width: 100%;
 
-//     .prev_next {
-//       font-family: $Cafe24Oneprettynight;
-//       color:#ffd861;
-//     }
-//   }
-// }
+  /* next/previous buttons */
+  &--pager {
+    margin-top: 0em;
+    padding-top: 0em;
+    display: block;
+    padding: 1em 2em;
+    //float: left;
+    width: 100%;
+    font-family: $sans-serif;
+    font-size: $type-size-5;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: $muted-text-color;
+    border: 1px solid mix(#000, $border-color, 25%);
+    border-radius: $border-radius;
 
+    .prev_next {
+      font-family: $Cafe24Oneprettynight;
+      color:#ffd861;
+    }
+  }
+}
 
 /*
      Priority plus navigation
@@ -230,7 +227,7 @@
       margin-left: 0;
     }
   }
-  
+
   img{
     -webkit-transition: none;
     transition: none;
@@ -381,7 +378,7 @@
       position: relative;
       display: inline-block;
       padding: 0.5em 2.5em 0.5em 1em;
-      color:$gray;
+      color: $gray;
       font-size: $type-size-6;
       font-weight: bold;
       border: 1px solid $light-gray;
@@ -469,13 +466,13 @@
 
 .nav__list .nav__items {
   margin: 0;
-  font-size: 1.3rem; //1.25rem;
+  font-size: 1em; // 1.25rem; 옆에 카테고리 글씨 크기
 
   a {
     color: inherit;
-    font-size: 1.6em;
-    // font-family: ""; // 이거 옆에 카테고리 (노란거) 폰트임
-    color: #f8e7b3;
+    font-size: 1.6em; //1.563em;
+    font-family: "Cafe24Oneprettynight";
+    color: #fff2cc;
   }
 
   .active {
@@ -517,21 +514,19 @@
   margin: 0;
   padding: 0.5rem 0.75rem;
   font-family: $sans-serif-narrow;
-  font-size: large; //$type-size-5;
+  font-size: $type-size-5;
   font-weight: bold;
-  // color:rgba(rgb(88, 158, 41), 0.12)
 }
 
 .nav__sub-title {
   display: block;
   margin: 0.5rem 0;
   padding: 0.25rem 0;
-  font-family: $sans-serif-narrow;
-  font-size: large; //$type-size-6;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #f8c837;
-  border-bottom: 1px solid $border-color;
+  font-size: 1.7em; //1.563em; // 카테고리 대분류 (텍스트부분) 크기
+  font-family: "",Georgia,Times,serif;
+  // font-weight: bold;
+  color: #ffd559; // 카테고리 대분류 색상
+  border-bottom: 1px solid #5f6365;
 }
 
 /*
@@ -550,7 +545,7 @@
   .nav__title {
     color: #fff;
     font-size: $type-size-6;
-    background: $primary-color;
+    background: rgb(110, 13, 13); // $primary-color; // 목차 색
     border-top-left-radius: $border-radius;
     border-top-right-radius: $border-radius;
   }
