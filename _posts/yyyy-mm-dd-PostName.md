@@ -1,5 +1,5 @@
 ---
-classes: wide
+classes: wide # wide, medium, small 로 게시글의 구성 결정 
 title: "[제목] 제목" # 제목을 큰 따옴표로 감싼다. title을 적어주지 않으면 .md 파일 이름으로 적어주었던 title 부분이 제목으로 업로드 된다.
 excerpt: "" # 포스트 목록에서 보여지는 아래쪽 문구다.
 
