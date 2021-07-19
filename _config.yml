@@ -20,7 +20,7 @@ title                    : "DaengDo's Archive"
 title_separator          : "-"
 subtitle                 : # 부제목, 블로그 이름 밑에 작게 표시됨
 name                     : "DaengDo" # 이름
-description              : "Turtle Developer"
+description              : "DaengDo's Archive"
 url                      : "https://DaengDo.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "/" # baseurl을 사용하고 있으면 입력하면 된다. // the subpath of your site, e.g. 
 repository               : "DaengDo/comments" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
