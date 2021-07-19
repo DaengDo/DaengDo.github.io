@@ -46,12 +46,12 @@
   }
 }
 /*
-     Post pagination navigation links
+     Post pagination navigation links // 홈에서 페이지네이션 설정
      ========================================================================== */
 .pagination {
   @include clearfix();
   float: left;
-  margin-top: 1em;
+  margin-top: 1em; // original 1em;
   padding-top: 1em;
   width: 100%;
 
@@ -65,7 +65,7 @@
   li {
     display: block;
     float: left;
-    margin-left: -1px;
+    margin-left: -1px; // original -1px;
 
     a {
       display: block;
@@ -88,7 +88,7 @@
       &.current,
       &.current.disabled {
         color: #fff;
-        background: $primary-color;
+        background: #80630d; // original $primary-color; // 글 목록에서 네모박스 1234 페이지
       }
 
       &.disabled {
@@ -545,7 +545,7 @@
   .nav__title {
     color: #fff;
     font-size: $type-size-6;
-    background: rgb(110, 13, 13); // $primary-color; // 목차 색
+    background: rgb(48, 80, 12); // $primary-color; // 목차 색
     border-top-left-radius: $border-radius;
     border-top-right-radius: $border-radius;
   }

@@ -1,5 +1,5 @@
 /* ==========================================================================
-   TABLES
+   TABLES // 글 작성시 테이블 설정
    ========================================================================== */
 
 table {
@@ -22,14 +22,14 @@ thead {
 }
 
 th {
-  padding: 0.5em;
+  padding: 0.6em; // original 0.5em;
   font-weight: bold;
   text-align: left;
 }
 
 td {
-  padding: 0.5em;
-  border-bottom: 1px solid mix(#000, $border-color, 25%);
+  padding: 0.6em; // original 0.5em;
+  border-bottom: 1px solid mix(#000, $border-color, 65%); // original 1px solid mix(#000, $border-color, 25%);
 }
 
 tr,

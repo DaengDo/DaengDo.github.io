@@ -3,8 +3,8 @@
    ========================================================================== */
 
 .archive {
-  margin-top: 1em;
-  margin-bottom: 2em;
+  margin-top: 0.1em; // 1em;
+  margin-bottom: 2em; // 2em;
 
   @include breakpoint($large) {
     float: right;
@@ -31,21 +31,21 @@
   }
 }
 
-.archive__subtitle {
+.archive__subtitle { // 홈 화면 Recent Posts
   margin: 0.8em 0 0;
   padding-bottom: 0.5em;
   font-size: 1.563em;
-  color: #ffd966;
+  color: #ffd966; // original #ffd966;
   border-bottom: 1px solid #5f6365;
-  font-family: "Coming Soon",Georgia,Times,serif;
+  font-family: "Cafe24Oneprettynight",Georgia,Times,serif;
 
   + .list__item .archive__item-title {
     margin-top: 0.5em;
   }
 }
 
-.archive__item-title {
-  margin-bottom: 0.25em;
+.archive__item-title { // 카테고리나 태그 눌렀을때 글 목록들
+  margin-bottom: 0.01em;
   font-family: $sans-serif-narrow;
   line-height: initial;
   overflow: hidden;
@@ -122,13 +122,13 @@
 }
 
 /*
-   List view
+   List view // 카테고리나 태그 눌러서 리스트뷰 됐을때
    ========================================================================== */
 
 .list__item {
   .page__meta {
-    margin: 0 0 4px;
-    font-size: 0.6em;
+    margin: 0 0 1px; // 0 0 4px;
+    font-size: 0.8em; //0.6em;
   }
 }
 

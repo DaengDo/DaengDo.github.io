@@ -25,7 +25,7 @@
       {% endif %}
     </h2>
 
-    <!-- 최근 포스트에서 소요시간을 나타내는데 보여주기 싫으니 주석 처리 -->
+    <!-- 최근 포스트의 소요시간 -->
     <!-- {% include page__meta.html type=include.type %} -->
 
     <!-- custom : 게시날짜 보여주게 -->
@@ -33,7 +33,7 @@
       <p class="page__meta"><i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i> {{ post.date | date: "%B %d %Y" }}</p>
     {% endif %}
 
-    <!-- 아래 Description 내용 : 보여주기 싫으니 주석 처리 -->
+    <!-- description 삭제, 포스트에서 excerpt 부분 -->
     <!-- {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify | strip_html | truncate: 160 }}</p>{% endif %} -->
   </article>
 </div>

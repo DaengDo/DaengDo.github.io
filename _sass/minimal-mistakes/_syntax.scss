@@ -4,12 +4,12 @@
 
 div.highlighter-rouge,
 figure.highlight {
-  padding-top: 0.1rem;
+  padding-top: 0.1rem; // original 0.1rem;
   padding-bottom: 0.1rem;
   font-size: 0.8em;
-  background: #4D5357;
-  color: #FFBF00;
-  border-radius: 4px;
+  background: #4a5155; // original #4D5357;
+  color: #FFBF00; // original #FFBF00;
+  border-radius: 4px; // original 4px;
 
   > pre,
   pre.highlight {
@@ -20,7 +20,7 @@ figure.highlight {
 
 .highlight table {
   margin-bottom: 0;
-  font-size: 1em;
+  font-size: 1em; // original 1em;
   border: 0;
 
   td {

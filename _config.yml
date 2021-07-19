@@ -276,7 +276,7 @@ defaults:
       author_profile: true
       read_time: false # 읽는데 걸리는 시간 표기 여부
       comments: true
-      share: false
+      share: true
       related: false
       mathjax: true
       sidebar_main: true
