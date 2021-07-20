@@ -11,13 +11,13 @@
  */
 
 @mixin notice($notice-color) {
-  margin: 2em 0 !important;  /* override*/
-  padding: 1em;
-  color: $text-color; // original $text-color;
+  margin: 0.5em 0 !important;  /* override*/ // original 2em 0 !important;
+  padding: 0.2em; // notice 패딩값 많이 줄인거임
+  color: #000; // original $text-color;
   font-family: $global-font-family;
-  font-size: $type-size-6 !important;
+  font-size: large !important;//$type-size-6 !important;
   text-indent: initial; /* override*/
-  background-color: mix($background-color, $notice-color, $notice-background-mix); // original mix($background-color, $notice-color, $notice-background-mix);
+  background-color: rgb(242, 245, 207); // original mix($background-color, $notice-color, $notice-background-mix);
   border-radius: $border-radius;
   box-shadow: 0 1px 1px rgba($notice-color, 0.25);
 

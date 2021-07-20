@@ -8,7 +8,7 @@
   <ul class="nav__items" id="category_tag_menu">
       <!--전체 글 수-->
       <li>
-            📂 <span style="font-size:18px">전체 글 수 : {{sum}} 개</span>
+            📂 <span style="font-size:18px">Posts<!--전체 글 수--> : {{sum}} <!--'개' 라고 써있던 곳--></span>
       </li>
       <li>
         <span class="nav__sub-title">JAVA</span>
@@ -84,6 +84,16 @@
                 {% for category in site.categories %}
                     {% if category[0] == "Github" %}
                         <li><a href="/categories/github" class="">Github({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+      </li>
+      <li>
+        <span class="nav__sub-title">Courses</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "GreenAcademy" %}
+                        <li><a href="/categories/greenacademy" class="">GreenAcademy({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>

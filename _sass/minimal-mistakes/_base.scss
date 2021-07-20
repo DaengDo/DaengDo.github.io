@@ -147,14 +147,14 @@ button:focus {
   @extend %tab-focus;
 }
 
-/* code */
+/* code */ // 이거 `` 했을때 나오는거임
 
 tt,
 code,
 kbd,
 samp,
 pre {
-  font-family: $monospace;
+  font-family: "Cafe24Oneprettynigh"; //$monospace;
 }
 
 pre {
@@ -170,7 +170,7 @@ td > code {
   padding-bottom: 0.1rem;
   font-size: 1em;
   background: $code-background-color;
-  color: #FFBF00;
+  color: #FFBF00;//#FFBF00; `` 이거 사이에 출력되는 글씨 색상
   border-radius: $border-radius;
 
   &:before,

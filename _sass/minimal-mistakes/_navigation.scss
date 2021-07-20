@@ -3,7 +3,7 @@
    ========================================================================== */
 
 /*
-   Breadcrumb navigation links
+   Breadcrumb navigation links // 글위에 home/경로1/경로2 이 부분
    ========================================================================== */
 
 .breadcrumbs {
@@ -25,7 +25,7 @@
   ol {
     padding: 0;
     list-style: none;
-    font-size: $type-size-6;
+    font-size: $type-size-6;//$type-size-6;
 
     @include breakpoint($large) {
       float: right;
@@ -42,7 +42,7 @@
   }
 
   .current {
-    font-weight: bold;
+    font-weight: bold; //bold; // 
   }
 }
 /*
@@ -73,7 +73,7 @@
       padding: 0.5em 1em;
       font-family: $sans-serif;
       font-size: 14px;
-      font-weight: bold;
+      font-weight: bold; // 1234 굵기
       line-height: 1.5;
       text-align: center;
       text-decoration: none;
@@ -82,7 +82,7 @@
       border-radius: 0;
 
       &:hover {
-        color: $link-color-hover;
+        color: $link-color-hover; // 홈에서 아래 12345 호버 색상
       }
 
       &.current,
@@ -466,7 +466,7 @@
 
 .nav__list .nav__items {
   margin: 0;
-  font-size: 1em; // 1.25rem; 옆에 카테고리 글씨 크기
+  font-size: 1.2em; // 1.25rem; 옆에 카테고리 글씨 크기
 
   a {
     color: inherit;
@@ -510,12 +510,12 @@
   }
 }
 
-.nav__title {
+.nav__title { // 목차, index 부분
   margin: 0;
-  padding: 0.5rem 0.75rem;
-  font-family: $sans-serif-narrow;
-  font-size: $type-size-5;
-  font-weight: bold;
+  padding: 0.5rem 0.75rem;//0.5rem 0.75rem;
+  font-family: $sans-serif-narrow;// 영어는 $sans-serif-narrow; 한글은 "Cafe24Oneprettynight"; 로 하는게 나을듯
+  font-size: $type-size-5;//$type-size-5;
+  font-weight: normal;//bold;
 }
 
 .nav__sub-title {
@@ -523,14 +523,14 @@
   margin: 0.5rem 0;
   padding: 0.25rem 0;
   font-size: 1.7em; //1.563em; // 카테고리 대분류 (텍스트부분) 크기
-  font-family: "",Georgia,Times,serif;
-  // font-weight: bold;
+  font-family: "Cafe24Oneprettynight",Georgia,Times,serif;
+  font-weight: bold; //bold;
   color: #ffd559; // 카테고리 대분류 색상
   border-bottom: 1px solid #5f6365;
 }
 
 /*
-     Table of contents navigation
+     Table of contents navigation 목차,index
      ========================================================================== */
 
 .toc {
@@ -543,9 +543,9 @@
   box-shadow: $box-shadow;
 
   .nav__title {
-    color: #fff;
+    color: #ffd559;//#fff;
     font-size: $type-size-6;
-    background: rgb(48, 80, 12); // $primary-color; // 목차 색
+    background: rgb(53, 54, 49); // $primary-color; // 목차 색
     border-top-left-radius: $border-radius;
     border-top-right-radius: $border-radius;
   }
@@ -556,8 +556,8 @@
   }
 }
 
-.toc__menu {
-  margin: 0;
+.toc__menu { // 목차,index
+  margin: 0; // 0;
   padding: 0;
   width: 100%;
   list-style: none;
@@ -569,11 +569,11 @@
 
   a {
     display: block;
-    padding: 0.25rem 0.75rem;
+    padding: 0.3rem 0.75rem;//0.25rem 0.75rem;
     color: $muted-text-color;
-    font-weight: bold;
-    line-height: 1.5;
-    border-bottom: 1px solid $border-color;
+    font-weight: normal; //bold;
+    line-height: 1.5;//1.5;
+    border-bottom: 1px solid $border-color;//1px solid $border-color;
 
     &:hover {
       color: $text-color;
@@ -581,23 +581,23 @@
   }
 
   li ul > li a {
-    padding-left: 1.25rem;
+    padding-left: 1.25rem;//1.25rem;
     font-weight: normal;
   }
 
   li ul li ul > li a {
-    padding-left: 1.75rem;
+    padding-left: 1.75rem; //1.75rem;
   }
 
   li ul li ul li ul > li a {
-    padding-left: 2.25rem;
+    padding-left: 2.25rem; //2.25rem;
   }
 
   li ul li ul li ul li ul > li a {
-    padding-left: 2.75rem;
+    padding-left: 2.75rem; //2.75rem;
   }
 
   li ul li ul li ul li ul li ul > li a {
-    padding-left: 3.25rem
+    padding-left: 3.25rem; //3.25rem
   }
 }

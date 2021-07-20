@@ -13,8 +13,8 @@ toc_sticky: true
 show_date: true
 read_time: false
 
-date: 2021-00-00
-last_modified_at: 2021-00-00 # 수정한 날짜
+date: 2021-0-0
+last_modified_at: 2021-0-0 # 수정한 날짜
 ---
 
 마크다운형식의포스트시작점
