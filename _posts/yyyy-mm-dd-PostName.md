@@ -23,11 +23,13 @@ last_modified_at: 2021-00-00 # 이 글을 수정한 날짜
 
 <br>
 
-<img src="이미지 url" width="가로 크기" height="세로 크기">
+<img src="../../assets/images/" width, height>
 
 <div class="notice">
   내용
 </div>
+
+
 
 ---
 
