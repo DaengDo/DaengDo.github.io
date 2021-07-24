@@ -23,7 +23,7 @@ last_modified_at: 2021-0-0 # 수정한 날짜
 
 <br>
 
-<img src="이미지 url" width="가로 크기" height="세로 크기">
+<img src="../../assets/images/{파일이름.확장자}" width, height>
 
 ---
 

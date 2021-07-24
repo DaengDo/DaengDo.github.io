@@ -73,9 +73,9 @@ body {
   }
 }
 
-.page__title { // 카테고리나 태그 눌렀을때 텍스트
+.page__title { // 왼쪽/상단 카테고리/태그 누르면 나오는 제목
   font-family: "Cafe24Oneprettynight";
-  margin-top: 0;
+  margin-top: 0rem; // 0;
   line-height: 1.2;
   color: #ffd966; // original #ffd966;
 
@@ -91,14 +91,14 @@ body {
 
 .page__content {
   h2 {
-    padding-bottom: 0.5em;
+    padding-bottom: 0.5rem; //0.5em;
     border-bottom: 1px solid $border-color; // original : 1px solid $border-color;
   }
 
 	h1, h2, h3, h4, h5, h6 {
 		.header-link {
 			position: relative;
-			left: 0.5em;
+			left: 0.5rem; // 0.5em;
 			opacity: 0;
 			font-size: 0.8em;
 			-webkit-transition: opacity 0.2s ease-in-out 0.1s;
@@ -115,7 +115,7 @@ body {
   p,
   li,
   dl {
-    font-size: 1em;
+    font-size: 1em;//1em;
   }
 
   /* paragraph indents */
