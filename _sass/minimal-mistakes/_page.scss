@@ -6,8 +6,8 @@
   @include clearfix;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 1em;
-  padding-right: 1em;
+  padding-left: 1em;//1em;
+  padding-right: 1em;//1em;
   -webkit-animation: $intro-transition;
   animation: $intro-transition;
   max-width: 100%;
@@ -37,7 +37,7 @@ body {
 
 .initial-content,
 .search-content {
-  flex: 1 0 auto;
+  flex: 1 0 auto; 
 }
 
 .page {
@@ -74,13 +74,13 @@ body {
 }
 
 .page__title { // 왼쪽/상단 카테고리/태그 누르면 나오는 제목
-  font-family: "Cafe24Oneprettynight";
+  font-family: "24OnCafeeprettynight";
   margin-top: 0rem; // 0;
   line-height: 1.2;
   color: #ffd966; // original #ffd966;
 
   & + .page__meta {
-    margin-top: -0.5em;
+    margin-top: -0.5em;//-0.5em;
   }
 }
 
@@ -318,25 +318,25 @@ body {
 
 .item-tag {
   margin-right: 3px;//5px; // 글 아래 태그의 오른쪽 마진
-  margin-bottom: 8px;
-  padding: 3px 8px;
+  margin-bottom: 8px;//8px;
+  padding: 1px 8px 1px 8px; //3px 8px;
   text-decoration: none;
   border: 1px solid #373C3F; // original 1px solid #373C3F;
   border-radius: 4px;
   background-color: #4D5357; // original #4D5357;
-  font-family: "",Georgia,Times,serif;
+  font-family: "24OnCafeeprettynight"; //,Georgia,Times,serif;
   color: #FFBF00; // original #FFBF00
 }
 
 .page__taxonomy-item-category {
   margin-right: 3px; // 카테고리와 태그의 간격 
   margin-bottom: 8px;
-  padding: 3px 8px;
+  padding: 1px 8px; // 3px 8px;
   text-decoration: none;
   border: 1px solid #373C3F;//original 1px solid #373C3F; // 카테고리 경계
   border-radius: 4px;
   background-color: #6d7275; //original #6d7275;
-  font-family: "",Georgia,Times,serif;
+  font-family: "24OnCafeeprettynight";//,Georgia,Times,serif;
   color: #ffc005; // original #ffc005;
 }
 
@@ -354,7 +354,7 @@ body {
 
 .page__taxonomy-item {
   display: inline-block;
-  margin-right: 5px;
+  margin-right: 5px; //
   margin-bottom: 8px;
   padding: 5px 10px;
   text-decoration: none;
@@ -368,8 +368,8 @@ body {
 }
 
 .taxonomy__section {
-  margin-bottom: 2em;
-  padding-bottom: 1em;
+  margin-bottom: 3rem;//2em;
+  padding-bottom: 3rem;//1em;
 
   &:not(:last-child) {
     border-bottom: solid 1px $border-color;
@@ -390,7 +390,7 @@ body {
 }
 
 .taxonomy__title {
-  margin-bottom: 0.5em;
+  margin-bottom: 0.5em; 
   color: $muted-text-color; // original $muted-text-color;
 }
 
@@ -400,11 +400,11 @@ body {
 
 .taxonomy__index {
   display: grid;
-  grid-column-gap: 2em; // original 2em; // 카테고리나 태그 눌렀을때 요소들간 거리
+  grid-column-gap: 2.4rem; // original 2em; // 카테고리나 태그 눌렀을때 요소들간 거리
   grid-template-columns: repeat(2, 1fr);
   margin: 1.414em 0;
   padding: 0;
-  font-size: 1.3em; // original 0.75em; // 오른쪽상단 카테고리 눌렀을때 카테고리 글씨크기
+  font-size: 1.4rem; // original 0.75em; // 오른쪽상단 카테고리 눌렀을때 카테고리 글씨크기
   list-style: none;
 
   @include breakpoint($large) {

@@ -48,12 +48,12 @@
 /*
      Post pagination navigation links // 홈에서 페이지네이션 설정
      ========================================================================== */
-.pagination {
+.pagination { // 페이지 박스형
   @include clearfix();
   float: left;
   margin-top: 1em; // original 1em;
   padding-top: 1em;
-  width: 100%;
+  width: 100%; // 페이지 박스 너비
 
   ul {
     margin: 0;
@@ -157,7 +157,7 @@
 .page__meta + .pagination,
 .page__share + .pagination,
 .page__comments + .pagination {
-  margin-top: 2em;
+  margin-top: 2em;// 2em;
   padding-top: 2em;
   border-top: 1px solid $border-color;
 }
@@ -192,7 +192,7 @@
 }
 
 /*
-     Priority plus navigation
+     Priority plus navigation // 우측 상단 카테고리 태그 등등등 있을때 페이지 줄이면 없어지는 우선순위
      ========================================================================== */
 
 .greedy-nav {
@@ -377,7 +377,7 @@
     label {
       position: relative;
       display: inline-block;
-      padding: 0.5em 2.5em 0.5em 1em;
+      padding: 0.5em 2.5em 0.5em 1em; // 0.5em 2.5em 0.5em 1em;
       color: $gray;
       font-size: $type-size-6;
       font-weight: bold;
@@ -534,7 +534,7 @@
      ========================================================================== */
 
 .toc {
-  font-family: $sans-serif-narrow;
+  font-family: $sans-serif-narrow; //
   color: $gray;
   background-color: $background-color;
   border: 1px solid $border-color;//1px solid $border-color;
@@ -543,9 +543,9 @@
   box-shadow: $box-shadow;
 
   .nav__title {
-    color: #ffd559;//#fff;
+    color: #ffffff;//#fff;
     font-size: $type-size-6;
-    background: rgb(53, 54, 49); // $primary-color; // 목차 색
+    background: rgb(48, 90, 80); // $primary-color; // 목차 색
     border-top-left-radius: $border-radius;
     border-top-right-radius: $border-radius;
   }

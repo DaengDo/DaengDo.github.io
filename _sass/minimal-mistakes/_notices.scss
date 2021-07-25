@@ -11,9 +11,9 @@
  */
 
 @mixin notice($notice-color) {
-  margin: 0.5em 0 !important;  /* override*/ // original 2em 0 !important;
-  padding: 0.2em; // notice 패딩값 많이 줄인거임
-  color: #000; // original $text-color;
+  margin: 1em 0 !important;  /* override*/ // original 2em 0 !important;
+  padding: 1em;//0.2em; // notice 패딩값 많이 줄인거임
+  color: rgb(0, 0, 0); // original $text-color;
   font-family: $global-font-family;
   font-size: large !important;//$type-size-6 !important;
   text-indent: initial; /* override*/

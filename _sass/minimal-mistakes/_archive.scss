@@ -40,12 +40,12 @@
   font-family: "Cafe24Oneprettynight",Georgia,Times,serif;
 
   + .list__item .archive__item-title {
-    margin-top: 0.5em;
+    margin-top: 0.5em; 
   }
 }
 
 .archive__item-title { // 카테고리나 태그 눌렀을때 글 목록들
-  margin-bottom: 0.01em;
+  margin-bottom: 0.01em; // original 0.01em;
   font-family: $sans-serif-narrow;
   line-height: initial;
   overflow: hidden;
@@ -127,7 +127,7 @@
 
 .list__item {
   .page__meta {
-    margin: 0 0 1px; // 0 0 4px;
+    margin: 0 0 4px; // 0 0 4px;
     font-size: 0.8em; //0.6em;
   }
 }
@@ -199,7 +199,7 @@
 
   .page__meta {
     margin: 0 0 4px;
-    font-size: 0.6em;
+    font-size: 0.6em; //
   }
 
   .page__meta-sep {
@@ -211,7 +211,7 @@
   }
 
   .archive__item-title {
-    margin-top: 0.5em;
+    margin-top: 0.5em; //
     font-size: $type-size-5;
   }
 
@@ -251,7 +251,7 @@
 
 .feature__item {
   position: relative;
-  margin-bottom: 2em;
+  margin-bottom: 2em; //
   font-size: 1.125em;
 
   @include breakpoint($small) {
@@ -349,7 +349,7 @@
     }
 
     .archive__item-teaser {
-      margin-bottom: 2em;
+      margin-bottom: 2em;//
     }
 
     a.btn::before {
