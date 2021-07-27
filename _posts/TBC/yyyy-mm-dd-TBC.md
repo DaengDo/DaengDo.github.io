@@ -5,7 +5,7 @@ excerpt: ""
 categories:
   - C
 tags:
-  - [C, 따배씨]
+  - [따배씨]
 toc: true
 toc_sticky: true
 show_date: true
