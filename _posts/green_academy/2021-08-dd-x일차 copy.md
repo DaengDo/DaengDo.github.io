@@ -5,13 +5,13 @@ excerpt: ""
 categories:
   - GreenAcademy
 tags:
-  - [Remind, HTML, CSS, JS, Java]
+  - [HTML, CSS, JS, Java]
 toc: true
 toc_sticky: true
 show_date: true
 read_time: false
-date: 2021-07-
-last_modified_at: 2021-07-
+date: 2021-08-
+last_modified_at: 2021-08-
 ---
 
 <br>
