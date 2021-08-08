@@ -18,8 +18,7 @@ $sans-serif: "Iropke Batang", -apple-system, BlinkMacSystemFont, "Roboto", "Sego
   "Helvetica Neue", "Lucida Grande", Arial, sans-serif !default;
 $monospace: Monaco, Consolas, "Lucida Console", monospace !default;
 $Cafe24Oneprettynight: "Cafe24Oneprettynight" !default;
-$SEBANG_Gothic_Bold: "SEBANG_Gothic_Bold" !default;
-$Coming_Soon: "Coming Soon", Georgia, Times, serif !default;
+$조선일보명조: "조선일보명조" !default;
 
 /* sans serif typefaces */
 $sans-serif-narrow: $sans-serif !default;
@@ -39,6 +38,10 @@ $garamond: Garamond, serif !default;
 @font-face {
    font-family: "조선일보명조";
    src: url(../../../assets/css/조선일보명조.ttf);
+}
+@font-face {
+   font-family: "나눔고딕코딩";
+   src: url(../../../assets/css/NanumGothicCoding.ttf);
 }
 
 $global-font-family: "조선일보명조", $sans-serif !default;
@@ -167,7 +170,7 @@ $max-width: $x-large !default;
    Grid
    ========================================================================== */
 
-$right-sidebar-width-narrow: 150px !default;
+$right-sidebar-width-narrow: 175px !default;
 $right-sidebar-width: 250px !default; // 왼쪽 내 정보와 글 사이 여백
 $right-sidebar-width-wide: 250px !default;
 

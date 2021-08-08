@@ -104,7 +104,7 @@ abbr[data-original-title] {
   border-bottom: 1px dotted $text-color;
 }
 
-/* blockquotes */
+/* blockquotes */ // 인용문
 
 blockquote {
   margin: 2em 1em 2em 0;
@@ -154,7 +154,7 @@ code,
 kbd,
 samp,
 pre {
-  font-family: "Cafe24Oneprettynigh"; //$monospace;
+  font-family: "나눔고딕코딩"; //"Cafe24Oneprettynigh"; //$monospace;
 }
 
 pre {
@@ -166,8 +166,8 @@ a > code,
 li > code,
 figcaption > code,
 td > code {
-  padding-top: 0.1rem;
-  padding-bottom: 0.1rem;
+  padding-top: 0rem;
+  padding-bottom: 0rem;
   font-size: 1em;
   background: $code-background-color;
   color: #FFBF00;//#FFBF00; `` 이거 사이에 출력되는 글씨 색상
