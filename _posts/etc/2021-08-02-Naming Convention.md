@@ -6,7 +6,7 @@ excerpt: ""
 categories:
   - Scrap # 카테고리 골라
 tags:
-  - [잡담, 메모]
+  - [메모]
 
 toc: true
 toc_sticky: true
@@ -14,7 +14,7 @@ show_date: true
 read_time: false
 
 date: 2021-08-02
-last_modified_at: 2021-08-02 # 수정한 날짜
+last_modified_at: 2021-08-12 # 수정한 날짜
 ---
 
 > 컴퓨터 프로그래밍에서 명명 규칙을 사용하는 이유
