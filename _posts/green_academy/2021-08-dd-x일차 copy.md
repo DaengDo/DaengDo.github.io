@@ -5,7 +5,7 @@ excerpt: ""
 categories:
   - GreenAcademy
 tags:
-  - [HTML, CSS, JS, Java]
+  - [HTML, CSS, JS, TS, React]
 toc: true
 toc_sticky: true
 show_date: true
