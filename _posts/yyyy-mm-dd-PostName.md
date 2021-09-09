@@ -24,6 +24,15 @@ last_modified_at: 2021-00-00 # 이 글을 수정한 날짜
 
 #
 
+warning text
+{: .notice--warning}
+
+primary text
+{: .notice--primary}
+
+small text
+{: .small}
+
 <br>
 
 <img src="../../assets/images/{파일이름.확장자}" width, height>

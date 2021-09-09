@@ -5,13 +5,13 @@ excerpt: ""
 categories:
   - GreenAcademy
 tags:
-  - [HTML, CSS, JS, TS, React]
+  - [HTML, CSS, JS, TS, React, Java]
 toc: true
 toc_sticky: true
 show_date: true
 read_time: false
-date: 2021-08-
-last_modified_at: 2021-08-
+date: 2021-09-
+last_modified_at: 2021-09-
 ---
 
 <br>
@@ -19,6 +19,7 @@ last_modified_at: 2021-08-
 _x월 x일 수업 요약_
 
 <br>
+
 
 # 1. 배운것
 # 2. 배운것
@@ -39,6 +40,8 @@ _x월 x일 수업 요약_
   내용
 </div>
 
+small text
+{: .small}
 
 ---
 
