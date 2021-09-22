@@ -96,7 +96,7 @@ analytics:
 author:
   name             : "DaengDo"
   avatar           : "/assets/images/peterson.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg" // 내 얼굴 사진 넣는 곳
-  bio              : "set up some aims for yourself"
+  bio              : "적으니까 기억에 잘 남네?"
   location         : "South Korea"
   email            : # 밑의 이메일과 이것중에 하나만 설정하면 된다. "ring_yoonsuk@naver.com"
   links:
