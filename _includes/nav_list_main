@@ -29,7 +29,7 @@
       </ul>
     </li>
     <li>
-      <span class="nav__sub-title">C</span>
+      <span class="nav__sub-title">Languages</span>
       <ul>
         {% for category in site.categories %} {% if category[0] == "C" %}
         <li>
@@ -37,9 +37,6 @@
         </li>
         {% endif %} {% endfor %}
       </ul>
-    </li>
-    <li>
-      <span class="nav__sub-title">JAVA</span>
       <ul>
         {% for category in site.categories %} {% if category[0] == "Java" %}
         <li>
@@ -47,9 +44,6 @@
         </li>
         {% endif %} {% endfor %}
       </ul>
-    </li>
-    <li>
-      <span class="nav__sub-title">Front-end</span>
       <ul>
         {% for category in site.categories %} {% if category[0] == "HTML" %}
         <li>
@@ -76,7 +70,7 @@
       </ul>
     </li>
     <li>
-      <span class="nav__sub-title">CS</span>
+      <span class="nav__sub-title">Background</span>
       <ul>
         {% for category in site.categories %} {% if category[0] == "Network" %}
         <li>
@@ -93,9 +87,6 @@
         </li>
         {% endif %} {% endfor %}
       </ul>
-    </li>
-    <li>
-      <span class="nav__sub-title">Git</span>
       <ul>
         {% for category in site.categories %} {% if category[0] == "Git" %}
         <li>
