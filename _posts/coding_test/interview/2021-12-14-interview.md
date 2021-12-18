@@ -6,7 +6,7 @@ excerpt: ""
 categories: 
   - CodingTest
 tags: 
-  - [CodeSignal]
+  - [Interview]
 
 toc: true
 toc_sticky: true 

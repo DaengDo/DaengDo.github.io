@@ -1,6 +1,6 @@
 ---
 classes: wide 
-title: "[CodeSignal] Arcade-4" 
+title: "[CodeSignal] Arcade-" 
 excerpt: "" 
 
 categories: 
