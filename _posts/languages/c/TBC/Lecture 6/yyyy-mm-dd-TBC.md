@@ -6,7 +6,7 @@ categories:
   - C
 tags:
   - [따배씨]
-toc: true
+toc: false
 toc_sticky: true
 show_date: true
 read_time: false
