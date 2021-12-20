@@ -11,7 +11,7 @@ toc_sticky: true
 show_date: true
 read_time: false
 date: 2021-12-19
-last_modified_at: 2021-12-19 # 수정한 날짜
+last_modified_at: 2021-12-20 # 수정한 날짜
 ---
 
 windows 10 기준
@@ -45,6 +45,8 @@ windows 10 기준
   - `emulator -avd 폰api기종`
     - 나는 픽셀2로 진행함 `emulator -avd Pixel_2_API_29`
 
+
+주말마다 RN 진행
 
 
 ---
