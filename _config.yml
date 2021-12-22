@@ -20,7 +20,7 @@ title                    : "DaengDo's Archive"
 title_separator          : "-"
 subtitle                 : # 부제목, 블로그 이름 밑에 작게 표시됨
 name                     : "DaengDo" # 이름
-description              : "스스로 배운것을 기록하는 공간입니다."
+description              : "뎅도 메모 공간"
 url                      : "https://DaengDo.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "/" # baseurl을 사용하고 있으면 입력하면 된다. // the subpath of your site, e.g. 
 repository               : "DaengDo/comments" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -96,7 +96,7 @@ analytics:
 author:
   name             : "DaengDo"
   avatar           : "/assets/images/peterson.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg" // 내 얼굴 사진 넣는 곳
-  bio              : "적으니까 기억에 잘 남네?"
+  bio              : "뎅도 메모 공간"
   location         : 
   email            : # 밑의 이메일과 이것중에 하나만 설정하면 된다. "ring_yoonsuk@naver.com"
   links:

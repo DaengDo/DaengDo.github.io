@@ -1,6 +1,6 @@
 ---
 classes: wide 
-title: "[CodeSignal] Arcade-" 
+title: "[CodeSignal] The core-1"
 excerpt: "" 
 
 categories: 

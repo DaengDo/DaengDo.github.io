@@ -47,9 +47,15 @@ windows 10 기준
 
 
 주말마다 RN 진행
+amd cpu 에러 뜸
+- https://github.com/google/android-emulator-hypervisor-driver-for-amd-processors
 
-
----
+```
+[SC] 4294967201 오류가 발생하여 StartService이(가) 실패했습니다.
+Android Emulator Hypervisor Driver for AMD Processors installation failed.
+To install Android Emulator Hypervisor Driver for AMD Processors follow the instructions found at: 
+https://github.com/google/android-emulator-hypervisor-driver-for-amd-processors Done
+```
 
 **🐿🐿**
 {: .notice--primary}

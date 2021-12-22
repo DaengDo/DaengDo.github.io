@@ -8,7 +8,7 @@ categories:
 tags: 
   - [CodeSignal]
 
-toc: false
+toc: true
 toc_sticky: true 
 show_date: true
 read_time: false
