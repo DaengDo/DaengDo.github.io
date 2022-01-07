@@ -59,6 +59,7 @@ useEffect(() => {
 ```js
 useEffect(() => {
   console.log("")
+  return ;
 },[])
 ```
 
