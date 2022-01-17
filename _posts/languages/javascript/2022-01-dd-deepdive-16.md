@@ -30,7 +30,20 @@ Writable 과 Configurable 이 비슷해보여서 햇갈린다 명확히 하자.
   - 의사 메서드(pseudo method)
 
 
+
+
 # 2. 
 
 
 작성중
+
+
+- [https://262.ecma-international.org/12.0/#sec-property-attributes](https://262.ecma-international.org/12.0/#sec-property-attributes)
+    - 2021 ECMA language specification
+    - writable 과 configurable 의 차이
+- [https://poiemaweb.com/js-object-oriented-programming#5-상속-inheritance](https://poiemaweb.com/js-object-oriented-programming#5-%EC%83%81%EC%86%8D-inheritance)
+    - 프로토 타입 상속
+- [https://developer.mozilla.org/ko/docs/Web/JavaScript/Inheritance_and_the_prototype_chain](https://developer.mozilla.org/ko/docs/Web/JavaScript/Inheritance_and_the_prototype_chain)
+    - 프로토 타입 상속
+- [https://developer.mozilla.org/ko/docs/Learn/JavaScript/Objects/Object_prototypes](https://developer.mozilla.org/ko/docs/Learn/JavaScript/Objects/Object_prototypes)
+    - 프로토 타입 체인, 프로토 타입 객체
