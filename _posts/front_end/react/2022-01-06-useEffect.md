@@ -55,18 +55,21 @@ useEffect(() => {
 ```
 - `something` 값이 변경될 때 
 
-## 4. 
+## 4. 반환값이 있는 경우 (return)
 ```js
 useEffect(() => {
   console.log("")
-  return ;
+  return () => {
+    console.log('cleanUp func');
+  };
 },[])
 ```
+- mount 될 때
+- 컴포넌트가 사라질 때 cleanup 함수 호출
 
-작성중
 
 **참고 자료**
 
 https://react.vlpt.us/basic/16-useEffect.html<br>
-https://react.vlpt.us/basic/16-useEffect.html<br>
+https://ko.reactjs.org/docs/hooks-reference.html#useeffect<br>
 https://xiubindev.tistory.com/100
