@@ -6,7 +6,7 @@ excerpt: ""
 categories:
   - React
 tags:
-  - [Frontend, Hooks]
+  - [Frontend]
 
 toc: true 
 toc_sticky: true
