@@ -1,6 +1,6 @@
 ---
 classes: wide
-title: "[Hooks, 작성중] useEffect"
+title: "[Hooks] useEffect"
 excerpt: ""
 
 categories:
