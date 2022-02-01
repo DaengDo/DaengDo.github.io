@@ -6,7 +6,7 @@ excerpt: ""
 categories:
   - Scrap # 카테고리 골라
 tags:
-  - [Music]]
+  - [Music]
 
 toc: true
 toc_sticky: true
