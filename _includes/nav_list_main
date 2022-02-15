@@ -83,7 +83,7 @@
       </ul>
       <ul>
         {% for category in site.categories %} {% if category[0] ==
-        "React" %}
+        "Electron" %}
         <li>
           <a href="/categories/electron" class=""
             >Electron({{ category[1].size }})</a
