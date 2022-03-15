@@ -27,6 +27,12 @@ last_modified_at: 2022-03-15
 # Renderer Process 에서 참조
 
 - ipc 통신할 때 ipcMain 에서 신호를 준 renderer process 참조가능함
-  - `event.send.getOwnerBrowserWindow()`
+  - `event.sender.getOwnerBrowserWindow()`
+  - `sender.id` 랑 `event.sender.getOwnerBrowserWindow().id` 가 다름; 이유는 아직 몰?루
+- remote 모듈 사용하는 방법도 있으나 일렉트론 v12 부터 deprecated 되었으니 사용하기 애매함
+  - `remote.getCurrentWindow().id`
+  - 정 필요하면 뭐
 
 **참고 자료**
+- https://stackoverflow.com/questions/43314039/how-to-close-electron-app-via-javascript
+- https://github.com/electron/electron/issues/4790
