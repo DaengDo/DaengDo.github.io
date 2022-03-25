@@ -36,6 +36,15 @@ last_modified_at: 2022-03-22 # 수정한 날짜
   - `npm install -g webpack`, `npm install -g webpack-cli`
     - 글로벌로 설치해도 안된다면 `npm link webpack`, `npm link webpack-cli`
 
+# mode
+- development, production 모드를 구분
+
+# Loaders
+- 특정 양식 파일들을 번들링함
+
+# plug-in
+- 로더보다 더 다양한 작업들을 수행함
+
 ---
 
 **🐿🐿**
