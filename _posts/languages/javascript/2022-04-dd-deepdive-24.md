@@ -64,5 +64,23 @@ function increase () {
 - 카운터에 사용하고 있는 `num` 변수는 `increase`함수가 호출되기 전까지 변경되지 않고 유지되어야 한다.<BR>따라서 `num` 변수는 오로지 `increase` 함수만이 변경할 수 있어야 한다.
 
 ```js
+const counter = (function() {
+  let num = 0;
 
+  return {
+    increase () {
+      return ++num;
+    },
+    decrease () {
+      return --num;
+    }
+  };
+}());
+
+console.log(counter.increase());  // 1
+console.log(counter.increase());  // 2
+console.log(counter.decrease());  // 1
+console.log(counter.decrease());  // 0
 ```
+- `increase` 와 `decrease` 메서드를 갖고 있는 객체를 반환하는 즉시 실행 함수로 클로저를 구현하였다.
+  - 객체는 스코프를 갖지 않으므로 해당 메서드의 상위 스코프는 위 예시의 즉시 실행 함수가 된다.
