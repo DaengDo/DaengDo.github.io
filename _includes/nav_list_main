@@ -21,7 +21,7 @@
         {% for category in site.categories %} {% if category[0] == "CodingTest"
         %}
         <li>
-          <a href="/categories/lifeLog" class=""
+          <a href="/categories/lifelog" class=""
             >LifeLog({{ category[1].size }})</a
           >
         </li>

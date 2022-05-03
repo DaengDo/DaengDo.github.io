@@ -1,7 +1,7 @@
 ---
 title: "사실상 일기"
 layout: archive
-permalink: categories/lifeLog
+permalink: categories/lifelog
 author_profile: true
 sidebar_main: true
 ---
