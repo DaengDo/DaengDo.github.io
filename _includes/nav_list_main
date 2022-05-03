@@ -18,7 +18,7 @@
     <li>
       <span class="nav__sub-title">Logs</span>
       <ul>
-        {% for category in site.categories %} {% if category[0] == "CodingTest"
+        {% for category in site.categories %} {% if category[0] == "LifeLog"
         %}
         <li>
           <a href="/categories/lifelog" class=""
