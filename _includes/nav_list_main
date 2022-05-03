@@ -16,7 +16,7 @@
       >
     </li>
     <li>
-      <span class="nav__sub-title">사실상 일기</span>
+      <span class="nav__sub-title">Logs</span>
       <ul>
         {% for category in site.categories %} {% if category[0] == "CodingTest"
         %}
