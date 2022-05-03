@@ -16,13 +16,13 @@
       >
     </li>
     <li>
-      <span class="nav__sub-title">CodingTest</span>
+      <span class="nav__sub-title">사실상 일기</span>
       <ul>
         {% for category in site.categories %} {% if category[0] == "CodingTest"
         %}
         <li>
-          <a href="/categories/codingTest" class=""
-            >CodingTest({{ category[1].size }})</a
+          <a href="/categories/lifeLog" class=""
+            >LifeLog({{ category[1].size }})</a
           >
         </li>
         {% endif %} {% endfor %}
@@ -155,6 +155,19 @@
         {% for category in site.categories %} {% if category[0] == "Scrap" %}
         <li>
           <a href="/categories/scrap" class="">Scrap({{ category[1].size }})</a>
+        </li>
+        {% endif %} {% endfor %}
+      </ul>
+    </li>
+    <li>
+      <span class="nav__sub-title">CodingTest</span>
+      <ul>
+        {% for category in site.categories %} {% if category[0] == "CodingTest"
+        %}
+        <li>
+          <a href="/categories/codingTest" class=""
+            >CodingTest({{ category[1].size }})</a
+          >
         </li>
         {% endif %} {% endfor %}
       </ul>
