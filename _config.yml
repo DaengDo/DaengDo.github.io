@@ -95,7 +95,7 @@ analytics:
 # Site Author
 author:
   name             : "DaengDo"
-  avatar           : "/assets/images/peterson.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg" // 내 얼굴 사진 넣는 곳
+  avatar           : "/assets/images/JS-함수는특정한값이다.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg" // 내 얼굴 사진 넣는 곳
   bio              : "뎅도 메모 공간"
   location         : 
   email            : # 밑의 이메일과 이것중에 하나만 설정하면 된다. "ring_yoonsuk@naver.com"
