@@ -47,7 +47,7 @@
 .archive__item-title { // 카테고리나 태그 눌렀을때 글 목록들
   margin-bottom: 0.01em; // original 0.01em;
   font-family: $sans-serif-narrow;
-  line-height: initial;
+  line-height: 40px;
   overflow: hidden;
   text-overflow: ellipsis;
 
