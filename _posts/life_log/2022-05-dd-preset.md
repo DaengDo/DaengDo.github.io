@@ -1,5 +1,5 @@
 ---
-classes: wide
+classes: medium
 title: "제목"
 excerpt: ""
 categories:
