@@ -12,7 +12,7 @@ toc_sticky: true # true로 해주면 목차가 스크롤을 따라 움직인다.
 show_date: true
 read_time: false
 
-date: 2022-05-23
+date: 2022-05-22
 last_modified_at: 2022-05-23
 # header: # 해더 이미지를 추가하면 opengraph 로 글이 링크 걸릴때 대표 이미지로 뜬다.
 #   image: /assets/images/page-header-image.png
