@@ -17,7 +17,11 @@ date: 2022-05-31
 last_modified_at: 2022-05-31 # 수정한 날짜
 ---
 
-아래 예시의 package.json 파일이 있다고 가정, 변수 적용하는 방법
+# 1. package.json 내 변수 사용
+
+package.json 자체에 변수를 할당하고 사용하는 방법이다.<BR>
+
+아래 예시의 package.json 파일이 있다고 가정
 
 ```json
 {
@@ -26,9 +30,6 @@ last_modified_at: 2022-05-31 # 수정한 날짜
 }
 ```
 
-# 1. package.json 내 변수 사용
-
-package.json 자체에 변수를 할당하고 사용하는 방법이다.<BR>
 OS 별 명령어는 다음과 같다.
 
 - `Windows`의 경우
@@ -94,9 +95,17 @@ $ node -r dotenv/config your_script.js
 }
 ```
 
+## 2-3. process.env.npm_package
+
+https://www.npmjs.cn/misc/scripts/#packagejson-vars
+
+npm 공식 문서에 따르면 package.json 의 필드값에 환경 변수로 접근이 가능하다.
+
+다만 변경은 안되는 것 같다. (적어도 나는 안됨😭)
+
 **참고 자료**
 
 https://stackoverflow.com/questions/43705195/how-can-i-use-variables-in-package-json<BR>
 http://www.marcusoft.net/2015/08/npm-scripting-configs-and-arguments.html#npm-configuration<BR>
-[`dotenv`](https://www.npmjs.com/package/dotenv){:target="_blank"}<BR>
+[dotenv](https://www.npmjs.com/package/dotenv){:target="_blank"}<BR>
 [cross-env](https://www.npmjs.com/package/cross-env){:target="_blank"}<BR>
