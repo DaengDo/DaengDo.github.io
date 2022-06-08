@@ -91,6 +91,16 @@
         </li>
         {% endif %} {% endfor %}
       </ul>
+      <ul>
+        {% for category in site.categories %} {% if category[0] ==
+        "Jest" %}
+        <li>
+          <a href="/categories/jest" class=""
+            >Jest({{ category[1].size }})</a
+          >
+        </li>
+        {% endif %} {% endfor %}
+      </ul>
     </li>
     <li>
       <span class="nav__sub-title">Background</span>
