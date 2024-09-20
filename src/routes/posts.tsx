@@ -33,7 +33,7 @@ const PostListComponent = () => {
 };
 
 export const Route = createFileRoute("/posts")({
-  loader: () => getPostList(),
+  loader: () => getPostList().then((posts) => posts.sort((p1, p2) => p2.dateByEdit - p1.dateByEdit)),
 
   component: PostListComponent,
 });
