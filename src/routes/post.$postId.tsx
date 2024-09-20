@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 
 import { PostContent } from "../PostContent";
 import { addPost, convertImgToBase64, formatDate, getPost, getVoidPost } from "../utils";
@@ -10,6 +10,7 @@ const PostComponent = () => {
 
   return (
     <div>
+      <Link to="/posts">뒤로가기</Link>
       <p>{title}</p>
 
       {image && <img src={image} />}
