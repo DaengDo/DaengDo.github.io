@@ -13,7 +13,7 @@ const RootComponent = () => {
       <hr />
 
       <Outlet />
-      <TanStackRouterDevtools />
+      {import.meta.env.DEV && <TanStackRouterDevtools />}
     </div>
   );
 };
