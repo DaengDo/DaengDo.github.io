@@ -1,10 +1,15 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { createFileRoute, Link, useRouter } from "@tanstack/react-router";
 
-import { formatDate, getPostList } from "../utils";
+import { deletePost, formatDate, getPostList } from "../utils";
 
 const PostListComponent = () => {
   const posts = Route.useLoaderData();
-  // const a = Route.useSearch();
+  const router = useRouter();
+
+  const handleDeleteClick = (id: number) => (e: React.MouseEvent) => {
+    e.preventDefault();
+    deletePost(id).then(router.invalidate);
+  };
 
   return (
     <>
@@ -41,6 +46,7 @@ const PostListComponent = () => {
                   backgroundColor: "transparent",
                   outline: "1px solid black",
                 }}
+                onClick={handleDeleteClick(id)}
               >
                 삭제
               </button>
