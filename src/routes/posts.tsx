@@ -5,7 +5,6 @@ import { formatDate, getPostList } from "../utils";
 const PostListComponent = () => {
   const posts = Route.useLoaderData();
   // const a = Route.useSearch();
-  console.log(posts);
 
   return (
     <>
@@ -16,12 +15,12 @@ const PostListComponent = () => {
       <hr />
 
       <ul style={{ display: "flex", flexDirection: "column", padding: "0 40px", gap: "10px" }}>
-        {posts.map(({ id, title, image, dateByCreate }) => (
+        {posts.map(({ id, title, image, dateByEdit }) => (
           <li style={{ listStyleType: "none", padding: 0, margin: 0 }} key={id}>
             <Link style={{ display: "flex", gap: "10px" }} to="/post/$postId" params={{ postId: id.toString() }}>
               {image && <img style={{ objectFit: "contain" }} src={image} />}
               <div>
-                <p>{formatDate(dateByCreate)}</p>
+                <p>{formatDate(dateByEdit)}</p>
                 <p>{title}</p>
               </div>
             </Link>
