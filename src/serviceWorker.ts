@@ -1,5 +1,5 @@
 const CACHE_NAME = "cache";
-const ASSETS_TO_CACHE = ["/", "/index.html", "/index.js", "/install-pc.png"];
+const ASSETS_TO_CACHE = ["/", "/index.html", "/index.js", "assets/install-pc.png"];
 
 const sw = self as unknown as ServiceWorkerGlobalScope;
 
