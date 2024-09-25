@@ -4,6 +4,7 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import { TanStackRouterVite } from "@tanstack/router-plugin/vite";
 import { manifestAssetsPlugin } from "./manifestAssetsPlugin";
+import { vanillaExtractPlugin } from "@vanilla-extract/vite-plugin";
 // import eslint from "vite-plugin-eslint";
 
 // https://vitejs.dev/config/
@@ -13,6 +14,7 @@ export default defineConfig({
     // eslint()
     TanStackRouterVite(),
     manifestAssetsPlugin(),
+    vanillaExtractPlugin(),
   ],
   server: {
     host: "0.0.0.0",
