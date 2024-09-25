@@ -4,6 +4,8 @@ import { RouterProvider, createRouter } from "@tanstack/react-router";
 
 import { routeTree } from "./routeTree.gen";
 
+import "./style/global.css";
+
 const router = createRouter({ routeTree });
 
 // Register the router instance for type safety
