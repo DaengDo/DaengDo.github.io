@@ -11,7 +11,10 @@ const AutoSavePlugin = () => {
   const post = useLoaderData({ from: "/post/$postId" });
 
   useEffect(() => {
-    const saveAutomatically = () => editor.read(() => updatePost({ ...post, content: $getRoot().getTextContent() }));
+    const saveAutomatically = () => {
+      console.log("이게 두 번 호출된다고?");
+      editor.read(() => updatePost({ ...post, content: $getRoot().getTextContent() }));
+    };
 
     window.addEventListener("beforeunload", saveAutomatically);
 

@@ -12,13 +12,7 @@ export const Route = createFileRoute("/post/$postId")({
   loader: async ({ params: { postId } }) => {
     const id = Number(postId);
 
-    if (Number.isNaN(id))
-      return addPost(
-        getVoidPost({
-          title: "새 포스트",
-          image: await convertImgToBase64(DEFAULT_IMG),
-        }),
-      );
+    if (Number.isNaN(id)) return addPost(getVoidPost({ image: await convertImgToBase64(DEFAULT_IMG) }));
 
     const post = await getPost({ id });
     return post;

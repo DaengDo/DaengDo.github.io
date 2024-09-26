@@ -1,6 +1,5 @@
 type Post = {
   id: number;
-  title: string;
   image: string;
   content: string;
   dateByCreate: number;
@@ -106,7 +105,6 @@ const isPost = (data: unknown): data is Post =>
   data != null &&
   typeof data == "object" &&
   "id" in data &&
-  "title" in data &&
   "image" in data &&
   "content" in data &&
   "dateByCreate" in data &&
@@ -155,7 +153,6 @@ const getVoidPost = (post?: Partial<Omit<Post, "id" | "dateByCreate">>) =>
     dateByCreate: Date.now(),
     dateByEdit: post?.dateByEdit || 0,
     image: post?.image || "",
-    title: post?.title || "",
   }) satisfies Omit<Post, "id">;
 
 const updatePost = (data: Post) =>

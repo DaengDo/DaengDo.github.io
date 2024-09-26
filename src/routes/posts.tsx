@@ -20,7 +20,7 @@ const PostListComponent = () => {
       <hr />
 
       <ul style={{ display: "flex", flexDirection: "column", padding: "0 40px", gap: "10px" }}>
-        {posts.map(({ id, title, image, dateByEdit }) => (
+        {posts.map(({ content, id, image, dateByEdit }) => (
           <li style={{ listStyleType: "none", padding: 0, margin: 0, width: "fit-content" }} key={id}>
             <Link
               style={{
@@ -36,7 +36,7 @@ const PostListComponent = () => {
               {image && <img style={{ objectFit: "contain" }} src={image} />}
               <div>
                 <p>{formatDate(dateByEdit)}</p>
-                <p>{title}</p>
+                <p>{content.split("\n")[0]}</p>
               </div>
 
               <button
