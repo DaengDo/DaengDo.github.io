@@ -5,9 +5,24 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@lexical/code':
+    specifier: ^0.17.1
+    version: 0.17.1
+  '@lexical/link':
+    specifier: ^0.17.1
+    version: 0.17.1
+  '@lexical/list':
+    specifier: ^0.17.1
+    version: 0.17.1
   '@lexical/react':
     specifier: ^0.17.1
     version: 0.17.1(react-dom@18.3.1)(react@18.3.1)(yjs@13.6.19)
+  '@lexical/rich-text':
+    specifier: ^0.17.1
+    version: 0.17.1
+  '@lexical/table':
+    specifier: ^0.17.1
+    version: 0.17.1
   '@tanstack/react-router':
     specifier: ^1.57.15
     version: 1.57.15(@tanstack/router-generator@1.57.15)(react-dom@18.3.1)(react@18.3.1)
