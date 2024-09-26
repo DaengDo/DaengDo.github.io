@@ -10,10 +10,6 @@ const RootComponent = () => {
 
   return (
     <>
-      <div>뜨개뜨개</div>
-
-      <hr />
-
       <Outlet />
       {import.meta.env.DEV && <TanStackRouterDevtools />}
     </>
