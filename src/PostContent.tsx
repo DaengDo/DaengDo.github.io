@@ -1,3 +1,4 @@
+import { useLoaderData } from "@tanstack/react-router";
 import { HistoryPlugin } from "@lexical/react/LexicalHistoryPlugin";
 import { RichTextPlugin } from "@lexical/react/LexicalRichTextPlugin";
 import { AutoFocusPlugin } from "@lexical/react/LexicalAutoFocusPlugin";
@@ -8,12 +9,14 @@ import { LexicalErrorBoundary } from "@lexical/react/LexicalErrorBoundary";
 import { AutoSavePlugin } from "./editorPlugins/AutoSavePlugin";
 import { AutoLoadPlugin } from "./editorPlugins/AutoLoadPlugin";
 
-const PostContent = ({ content }: { content: string }) => {
+const PostContent = () => {
   const initialConfig = {
     namespace: "MyEditor",
     // theme,
     onError: console.error,
   };
+
+  const { content } = useLoaderData({ from: "/post/$postId" });
 
   return (
     <LexicalComposer initialConfig={initialConfig}>
