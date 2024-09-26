@@ -1,7 +1,6 @@
 import { useLoaderData } from "@tanstack/react-router";
 import { HistoryPlugin } from "@lexical/react/LexicalHistoryPlugin";
 import { RichTextPlugin } from "@lexical/react/LexicalRichTextPlugin";
-import { AutoFocusPlugin } from "@lexical/react/LexicalAutoFocusPlugin";
 import { InitialConfigType, LexicalComposer } from "@lexical/react/LexicalComposer";
 import { ContentEditable } from "@lexical/react/LexicalContentEditable";
 import { LexicalErrorBoundary } from "@lexical/react/LexicalErrorBoundary";
@@ -27,7 +26,6 @@ const Post = () => {
   return (
     <LexicalComposer initialConfig={initialConfig}>
       <HistoryPlugin />
-      <AutoFocusPlugin />
       <AutoLoadPlugin />
       <AutoSavePlugin />
 

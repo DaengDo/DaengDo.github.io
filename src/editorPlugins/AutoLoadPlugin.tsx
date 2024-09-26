@@ -10,12 +10,20 @@ const AutoLoadPlugin = () => {
   useEffect(() => {
     editor.update(() => {
       const root = $getRoot();
+
+      if (post.content === "") {
+        editor.focus();
+        root.selectEnd();
+        return;
+      }
+
       root.clear();
 
       const paragraphNode = $createParagraphNode();
       const textNode = $createTextNode(post.content);
       paragraphNode.append(textNode);
       root.append(paragraphNode);
+      paragraphNode.selectEnd();
     });
   }, [editor, post]);
 
