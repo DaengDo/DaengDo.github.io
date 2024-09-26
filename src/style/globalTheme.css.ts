@@ -40,12 +40,12 @@ createGlobalTheme(":root", vars, {
   color: {
     background: "rgb(255, 255, 255)",
 
-    primary: "rgb(244, 244, 244)",
+    primary: "rgb(243, 242, 248)",
     secondary: "rgb(233, 233, 233)",
 
     text: "rgb(0, 0, 0)",
-    info: "rgb(220, 220, 220)",
-    warn: "rgb(230, 20, 20)",
+    info: "rgb(230, 176, 18)",
+    warn: "rgb(255, 61, 47)",
     placeholder: "rgb(166, 169, 177)",
 
     scrollbar: "rgb(102, 102, 102)",
