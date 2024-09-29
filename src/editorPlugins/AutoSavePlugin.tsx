@@ -12,8 +12,13 @@ const AutoSavePlugin = () => {
 
   useEffect(() => {
     const saveAutomatically = () => {
-      console.log("이게 두 번 호출된다고?");
-      editor.read(() => updatePost({ ...post, content: $getRoot().getTextContent() }));
+      editor.read(() => {
+        updatePost({
+          ...post,
+          title: $getRoot().getTextContent().split("\n")[0],
+          content: JSON.stringify(editor.toJSON().editorState),
+        });
+      });
     };
 
     window.addEventListener("beforeunload", saveAutomatically);

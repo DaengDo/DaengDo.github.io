@@ -1,6 +1,7 @@
 type Post = {
   id: number;
   image: string;
+  title: string;
   content: string;
   dateByCreate: number;
   dateByEdit: number;
@@ -106,6 +107,7 @@ const isPost = (data: unknown): data is Post =>
   typeof data == "object" &&
   "id" in data &&
   "image" in data &&
+  "title" in data &&
   "content" in data &&
   "dateByCreate" in data &&
   "dateByEdit" in data;
@@ -149,6 +151,7 @@ const getPost = async (data: { id: number } | { title: string }) => {
 
 const getVoidPost = (post?: Partial<Omit<Post, "id" | "dateByCreate">>) =>
   ({
+    title: post?.title || "",
     content: post?.content || "",
     dateByCreate: Date.now(),
     dateByEdit: post?.dateByEdit || 0,
