@@ -33,7 +33,7 @@ const PostListComponent = () => {
               to="/post/$postId"
               params={{ postId: id.toString() }}
             >
-              {image && <img style={{ objectFit: "contain" }} src={image} />}
+              {image && <img style={{ objectFit: "contain", maxHeight: "100px", maxWidth: "100px" }} src={image} />}
               <div>
                 <p>{formatDate(dateByEdit)}</p>
                 <p>{title}</p>
