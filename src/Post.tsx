@@ -5,6 +5,7 @@ import { HeadingNode, QuoteNode } from "@lexical/rich-text";
 import { TableNode, TableCellNode, TableRowNode } from "@lexical/table";
 import { HorizontalRuleNode } from "@lexical/react/LexicalHorizontalRuleNode";
 
+import { PhotoPicker } from "./photoPicker/PhotoPicker";
 import { HistoryPlugin } from "@lexical/react/LexicalHistoryPlugin";
 import { RichTextPlugin } from "@lexical/react/LexicalRichTextPlugin";
 import { ContentEditable } from "@lexical/react/LexicalContentEditable";
@@ -50,6 +51,8 @@ const Post = () => {
       <AutoLoadPlugin />
       <AutoSavePlugin />
       <MarkdownShortcutPlugin />
+
+      <PhotoPicker />
 
       <ToolbarPlugin />
       <RichTextPlugin
