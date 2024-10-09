@@ -3,7 +3,7 @@ import { useLoaderData } from "@tanstack/react-router";
 import { $getRoot } from "lexical";
 import { useLexicalComposerContext } from "@lexical/react/LexicalComposerContext";
 
-import { updatePost } from "../utils";
+import { debounce, updatePost } from "../utils";
 
 const AutoSavePlugin = () => {
   const [editor] = useLexicalComposerContext();
@@ -11,22 +11,19 @@ const AutoSavePlugin = () => {
   const post = useLoaderData({ from: "/post/$postId" });
 
   useEffect(() => {
-    const saveAutomatically = () => {
-      editor.read(() => {
-        updatePost({
+    const debouncedUpdate = debounce(updatePost, 200);
+
+    editor.registerUpdateListener(({ editorState }) => {
+      editorState.read(() => {
+        const postToSave = {
           ...post,
           title: $getRoot().getTextContent().split("\n")[0],
           content: JSON.stringify(editor.toJSON().editorState),
-        });
+        };
+
+        debouncedUpdate(postToSave);
       });
-    };
-
-    window.addEventListener("beforeunload", saveAutomatically);
-
-    return () => {
-      window.removeEventListener("beforeunload", saveAutomatically);
-      saveAutomatically();
-    };
+    });
   }, [editor, post]);
 
   return null;

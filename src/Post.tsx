@@ -1,5 +1,3 @@
-import { useLoaderData } from "@tanstack/react-router";
-
 import { CodeNode } from "@lexical/code";
 import { AutoLinkNode, LinkNode } from "@lexical/link";
 import { ListNode, ListItemNode } from "@lexical/list";
@@ -46,8 +44,6 @@ const Post = () => {
     onError: console.error,
   } satisfies InitialConfigType;
 
-  const { content } = useLoaderData({ from: "/post/$postId" });
-
   return (
     <LexicalComposer initialConfig={initialConfig}>
       <HistoryPlugin />
@@ -59,7 +55,7 @@ const Post = () => {
       <RichTextPlugin
         contentEditable={
           <div className={editorContainer}>
-            <ContentEditable className={editorSpace} defaultValue={content} spellCheck={false} />
+            <ContentEditable className={editorSpace} spellCheck={false} />
           </div>
         }
         ErrorBoundary={LexicalErrorBoundary}

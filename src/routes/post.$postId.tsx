@@ -17,4 +17,6 @@ export const Route = createFileRoute("/post/$postId")({
     const post = await getPost({ id });
     return post;
   },
+
+  gcTime: 0,
 });

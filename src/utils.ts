@@ -34,7 +34,6 @@ const openDB = (upgradeCallback?: (db: IDBDatabase) => void): Promise<IDBDatabas
 
 const addData = (db: IDBDatabase, storeKey: STORE_KEY, data: Record<PropertyKey, unknown>) =>
   new Promise((resolve, reject) => {
-    console.log("adddata 몇 번 호출되지", data);
     const transaction = db.transaction([storeKey], "readwrite");
     const store = transaction.objectStore(storeKey);
     const request = store.add(data);
@@ -81,7 +80,6 @@ const getData = (
 
 const updateData = (db: IDBDatabase, storeKey: STORE_KEY, data: Record<PropertyKey, unknown>): Promise<boolean> =>
   new Promise((resolve, reject) => {
-    console.log("update 몇 번 호출되지", data);
     const transaction = db.transaction([storeKey], "readwrite");
     const store = transaction.objectStore(storeKey);
     const request = store.put(data);
@@ -184,6 +182,17 @@ const convertImgToBase64 = async (imagePath: string): Promise<string> => {
   });
 };
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const debounce = <T extends any[]>(fn: (...params: T) => any, time: number) => {
+  let id: ReturnType<typeof setTimeout> | null = null;
+
+  return (...parmas: T) => {
+    if (id != null) clearTimeout(id);
+
+    id = setTimeout(fn, time, ...parmas);
+  };
+};
+
 export {
   // constants
   STORE_KEY,
@@ -199,6 +208,7 @@ export {
   // util functions
   formatDate,
   convertImgToBase64,
+  debounce,
 };
 
 export type { Post };
